@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated esof_homework4_q2 -->
+      <package
+            uri="http://www.example.org/esof_homework4_q2"
+            class="esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Package"
+            genModel="model/esof_homework4_q2.genmodel"/>
+   </extension>
+
+</plugin>

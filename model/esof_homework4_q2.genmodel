@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/esof_homework4_q2/src-gen" creationIcons="false"
+    editDirectory="/esof_homework4_q2.edit/src-gen" editorDirectory="/esof_homework4_q2.editor/src-gen"
+    modelPluginID="esof_homework4_q2" modelName="Esof_homework4_q2" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>esof_homework4_q2.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Esof_homework4_q2" basePackage="esof_homework4_q2" disposableProviderFactory="true"
+      ecorePackage="esof_homework4_q2.ecore#/">
+    <genDataTypes ecoreDataType="esof_homework4_q2.ecore#//Date"/>
+    <genDataTypes ecoreDataType="esof_homework4_q2.ecore#//SKU"/>
+    <genClasses ecoreClass="esof_homework4_q2.ecore#//PurchaseOrder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//PurchaseOrder/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//PurchaseOrder/orderDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esof_homework4_q2.ecore#//PurchaseOrder/items"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esof_homework4_q2.ecore#//PurchaseOrder/shipTo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esof_homework4_q2.ecore#//PurchaseOrder/billTo"/>
+    </genClasses>
+    <genClasses ecoreClass="esof_homework4_q2.ecore#//USAddress">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/zip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/country"/>
+    </genClasses>
+    <genClasses ecoreClass="esof_homework4_q2.ecore#//Item">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/productName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/USPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/shipDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/partNum"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
