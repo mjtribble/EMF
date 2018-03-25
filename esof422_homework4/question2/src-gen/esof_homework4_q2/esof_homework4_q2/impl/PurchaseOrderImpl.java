@@ -3,6 +3,9 @@
 package esof_homework4_q2.esof_homework4_q2.impl;
 
 import esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Package;
+import esof_homework4_q2.esof_homework4_q2.Item;
+import esof_homework4_q2.esof_homework4_q2.PurchaseOrder;
+import esof_homework4_q2.esof_homework4_q2.USAddress;
 
 import java.util.Collection;
 import java.util.Date;

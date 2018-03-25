@@ -60,11 +60,11 @@ public class Esof_homework4_q2FactoryImpl extends EFactoryImpl implements Esof_h
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 		case Esof_homework4_q2Package.PURCHASE_ORDER:
-			return (EObject) createPurchaseOrder();
-		case Esof_homework4_q2Package.US_ADDRESS:
-			return (EObject) createUSAddress();
+			return createPurchaseOrder();
 		case Esof_homework4_q2Package.ITEM:
-			return (EObject) createItem();
+			return createItem();
+		case Esof_homework4_q2Package.US_ADDRESS:
+			return createUSAddress();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -119,9 +119,9 @@ public class Esof_homework4_q2FactoryImpl extends EFactoryImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public USAddress createUSAddress() {
-		USAddressImpl usAddress = new USAddressImpl();
-		return usAddress;
+	public Item createItem() {
+		ItemImpl item = new ItemImpl();
+		return item;
 	}
 
 	/**
@@ -129,9 +129,9 @@ public class Esof_homework4_q2FactoryImpl extends EFactoryImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Item createItem() {
-		ItemImpl item = new ItemImpl();
-		return item;
+	public USAddress createUSAddress() {
+		USAddressImpl usAddress = new USAddressImpl();
+		return usAddress;
 	}
 
 	/**
@@ -157,8 +157,8 @@ public class Esof_homework4_q2FactoryImpl extends EFactoryImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createSKUFromString(EDataType eDataType, String initialValue) {
-		return (String) super.createFromString(eDataType, initialValue);
+	public Object createSKUFromString(EDataType eDataType, String initialValue) {
+		return super.createFromString(eDataType, initialValue);
 	}
 
 	/**

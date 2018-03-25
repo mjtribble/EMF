@@ -131,88 +131,6 @@ public interface Esof_homework4_q2Package extends EPackage {
 	int PURCHASE_ORDER_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl <em>US Address</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl
-	 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getUSAddress()
-	 * @generated
-	 */
-	int US_ADDRESS = 1;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Street</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__STREET = 1;
-
-	/**
-	 * The feature id for the '<em><b>City</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__CITY = 2;
-
-	/**
-	 * The feature id for the '<em><b>State</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__STATE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Zip</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__ZIP = 4;
-
-	/**
-	 * The feature id for the '<em><b>Country</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS__COUNTRY = 5;
-
-	/**
-	 * The number of structural features of the '<em>US Address</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS_FEATURE_COUNT = 6;
-
-	/**
-	 * The number of operations of the '<em>US Address</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int US_ADDRESS_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link esof_homework4_q2.esof_homework4_q2.impl.ItemImpl <em>Item</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -220,7 +138,7 @@ public interface Esof_homework4_q2Package extends EPackage {
 	 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getItem()
 	 * @generated
 	 */
-	int ITEM = 2;
+	int ITEM = 1;
 
 	/**
 	 * The feature id for the '<em><b>Product Name</b></em>' attribute.
@@ -295,6 +213,88 @@ public interface Esof_homework4_q2Package extends EPackage {
 	int ITEM_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl <em>US Address</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl
+	 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getUSAddress()
+	 * @generated
+	 */
+	int US_ADDRESS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Street</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__STREET = 1;
+
+	/**
+	 * The feature id for the '<em><b>City</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__CITY = 2;
+
+	/**
+	 * The feature id for the '<em><b>Zip</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__ZIP = 3;
+
+	/**
+	 * The feature id for the '<em><b>State</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__STATE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Country</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS__COUNTRY = 5;
+
+	/**
+	 * The number of structural features of the '<em>US Address</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>US Address</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int US_ADDRESS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '<em>Date</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -308,231 +308,228 @@ public interface Esof_homework4_q2Package extends EPackage {
 	 * The meta object id for the '<em>SKU</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see java.lang.String
+	 * @see java.lang.Object
 	 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getSKU()
 	 * @generated
 	 */
 	int SKU = 4;
 
 	/**
-	 * Returns the meta object for class '{@link PurchaseOrder <em>Purchase Order</em>}'.
+	 * Returns the meta object for class '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder <em>Purchase Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Purchase Order</em>'.
-	 * @see PurchaseOrder
-	 * @model instanceClass="PurchaseOrder"
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder
 	 * @generated
 	 */
 	EClass getPurchaseOrder();
 
 	/**
-	 * Returns the meta object for the attribute '{@link PurchaseOrder#getComment <em>Comment</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getComment <em>Comment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Comment</em>'.
-	 * @see PurchaseOrder#getComment()
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getComment()
 	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
 	EAttribute getPurchaseOrder_Comment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link PurchaseOrder#getOrderDate <em>Order Date</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getOrderDate <em>Order Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Order Date</em>'.
-	 * @see PurchaseOrder#getOrderDate()
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getOrderDate()
 	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
 	EAttribute getPurchaseOrder_OrderDate();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link PurchaseOrder#getItems <em>Items</em>}'.
+	 * Returns the meta object for the containment reference list '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getItems <em>Items</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Items</em>'.
-	 * @see PurchaseOrder#getItems()
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getItems()
 	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
 	EReference getPurchaseOrder_Items();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link PurchaseOrder#getShipTo <em>Ship To</em>}'.
+	 * Returns the meta object for the containment reference '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getShipTo <em>Ship To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Ship To</em>'.
-	 * @see PurchaseOrder#getShipTo()
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getShipTo()
 	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
 	EReference getPurchaseOrder_ShipTo();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link PurchaseOrder#getBillTo <em>Bill To</em>}'.
+	 * Returns the meta object for the containment reference '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getBillTo <em>Bill To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Bill To</em>'.
-	 * @see PurchaseOrder#getBillTo()
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder#getBillTo()
 	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
 	EReference getPurchaseOrder_BillTo();
 
 	/**
-	 * Returns the meta object for class '{@link USAddress <em>US Address</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>US Address</em>'.
-	 * @see USAddress
-	 * @model instanceClass="USAddress"
-	 * @generated
-	 */
-	EClass getUSAddress();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see USAddress#getName()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getStreet <em>Street</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Street</em>'.
-	 * @see USAddress#getStreet()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_Street();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getCity <em>City</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>City</em>'.
-	 * @see USAddress#getCity()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_City();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getState <em>State</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>State</em>'.
-	 * @see USAddress#getState()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_State();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getZip <em>Zip</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Zip</em>'.
-	 * @see USAddress#getZip()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_Zip();
-
-	/**
-	 * Returns the meta object for the attribute '{@link USAddress#getCountry <em>Country</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Country</em>'.
-	 * @see USAddress#getCountry()
-	 * @see #getUSAddress()
-	 * @generated
-	 */
-	EAttribute getUSAddress_Country();
-
-	/**
-	 * Returns the meta object for class '{@link Item <em>Item</em>}'.
+	 * Returns the meta object for class '{@link esof_homework4_q2.esof_homework4_q2.Item <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Item</em>'.
-	 * @see Item
-	 * @model instanceClass="Item"
+	 * @see esof_homework4_q2.esof_homework4_q2.Item
 	 * @generated
 	 */
 	EClass getItem();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getProductName <em>Product Name</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getProductName <em>Product Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Product Name</em>'.
-	 * @see Item#getProductName()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getProductName()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_ProductName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getQuantity <em>Quantity</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getQuantity <em>Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Quantity</em>'.
-	 * @see Item#getQuantity()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getQuantity()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_Quantity();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getUSPrice <em>US Price</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getUSPrice <em>US Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>US Price</em>'.
-	 * @see Item#getUSPrice()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getUSPrice()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_USPrice();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getComment <em>Comment</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getComment <em>Comment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Comment</em>'.
-	 * @see Item#getComment()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getComment()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_Comment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getShipDate <em>Ship Date</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getShipDate <em>Ship Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Ship Date</em>'.
-	 * @see Item#getShipDate()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getShipDate()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_ShipDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Item#getPartNum <em>Part Num</em>}'.
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.Item#getPartNum <em>Part Num</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Part Num</em>'.
-	 * @see Item#getPartNum()
+	 * @see esof_homework4_q2.esof_homework4_q2.Item#getPartNum()
 	 * @see #getItem()
 	 * @generated
 	 */
 	EAttribute getItem_PartNum();
+
+	/**
+	 * Returns the meta object for class '{@link esof_homework4_q2.esof_homework4_q2.USAddress <em>US Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>US Address</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress
+	 * @generated
+	 */
+	EClass getUSAddress();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getName()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getStreet <em>Street</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Street</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getStreet()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_Street();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getCity <em>City</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>City</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getCity()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_City();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getZip <em>Zip</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Zip</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getZip()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_Zip();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getState <em>State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>State</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getState()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_State();
+
+	/**
+	 * Returns the meta object for the attribute '{@link esof_homework4_q2.esof_homework4_q2.USAddress#getCountry <em>Country</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Country</em>'.
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress#getCountry()
+	 * @see #getUSAddress()
+	 * @generated
+	 */
+	EAttribute getUSAddress_Country();
 
 	/**
 	 * Returns the meta object for data type '{@link java.util.Date <em>Date</em>}'.
@@ -546,12 +543,12 @@ public interface Esof_homework4_q2Package extends EPackage {
 	EDataType getDate();
 
 	/**
-	 * Returns the meta object for data type '{@link java.lang.String <em>SKU</em>}'.
+	 * Returns the meta object for data type '{@link java.lang.Object <em>SKU</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>SKU</em>'.
-	 * @see java.lang.String
-	 * @model instanceClass="java.lang.String"
+	 * @see java.lang.Object
+	 * @model instanceClass="java.lang.Object"
 	 * @generated
 	 */
 	EDataType getSKU();
@@ -630,64 +627,6 @@ public interface Esof_homework4_q2Package extends EPackage {
 		EReference PURCHASE_ORDER__BILL_TO = eINSTANCE.getPurchaseOrder_BillTo();
 
 		/**
-		 * The meta object literal for the '{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl <em>US Address</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl
-		 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getUSAddress()
-		 * @generated
-		 */
-		EClass US_ADDRESS = eINSTANCE.getUSAddress();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__NAME = eINSTANCE.getUSAddress_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Street</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__STREET = eINSTANCE.getUSAddress_Street();
-
-		/**
-		 * The meta object literal for the '<em><b>City</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__CITY = eINSTANCE.getUSAddress_City();
-
-		/**
-		 * The meta object literal for the '<em><b>State</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__STATE = eINSTANCE.getUSAddress_State();
-
-		/**
-		 * The meta object literal for the '<em><b>Zip</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__ZIP = eINSTANCE.getUSAddress_Zip();
-
-		/**
-		 * The meta object literal for the '<em><b>Country</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute US_ADDRESS__COUNTRY = eINSTANCE.getUSAddress_Country();
-
-		/**
 		 * The meta object literal for the '{@link esof_homework4_q2.esof_homework4_q2.impl.ItemImpl <em>Item</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -746,6 +685,64 @@ public interface Esof_homework4_q2Package extends EPackage {
 		EAttribute ITEM__PART_NUM = eINSTANCE.getItem_PartNum();
 
 		/**
+		 * The meta object literal for the '{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl <em>US Address</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl
+		 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getUSAddress()
+		 * @generated
+		 */
+		EClass US_ADDRESS = eINSTANCE.getUSAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__NAME = eINSTANCE.getUSAddress_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Street</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__STREET = eINSTANCE.getUSAddress_Street();
+
+		/**
+		 * The meta object literal for the '<em><b>City</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__CITY = eINSTANCE.getUSAddress_City();
+
+		/**
+		 * The meta object literal for the '<em><b>Zip</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__ZIP = eINSTANCE.getUSAddress_Zip();
+
+		/**
+		 * The meta object literal for the '<em><b>State</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__STATE = eINSTANCE.getUSAddress_State();
+
+		/**
+		 * The meta object literal for the '<em><b>Country</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute US_ADDRESS__COUNTRY = eINSTANCE.getUSAddress_Country();
+
+		/**
 		 * The meta object literal for the '<em>Date</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -759,7 +756,7 @@ public interface Esof_homework4_q2Package extends EPackage {
 		 * The meta object literal for the '<em>SKU</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see java.lang.String
+		 * @see java.lang.Object
 		 * @see esof_homework4_q2.esof_homework4_q2.impl.Esof_homework4_q2PackageImpl#getSKU()
 		 * @generated
 		 */

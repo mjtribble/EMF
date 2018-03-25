@@ -31,15 +31,6 @@ public interface Esof_homework4_q2Factory extends EFactory {
 	PurchaseOrder createPurchaseOrder();
 
 	/**
-	 * Returns a new object of class '<em>US Address</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>US Address</em>'.
-	 * @generated
-	 */
-	USAddress createUSAddress();
-
-	/**
 	 * Returns a new object of class '<em>Item</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,6 +38,15 @@ public interface Esof_homework4_q2Factory extends EFactory {
 	 * @generated
 	 */
 	Item createItem();
+
+	/**
+	 * Returns a new object of class '<em>US Address</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>US Address</em>'.
+	 * @generated
+	 */
+	USAddress createUSAddress();
 
 	/**
 	 * Returns the package supported by this factory.

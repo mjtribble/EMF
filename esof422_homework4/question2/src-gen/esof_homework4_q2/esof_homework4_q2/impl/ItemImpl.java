@@ -3,6 +3,7 @@
 package esof_homework4_q2.esof_homework4_q2.impl;
 
 import esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Package;
+import esof_homework4_q2.esof_homework4_q2.Item;
 
 import java.util.Date;
 
@@ -133,16 +134,6 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 	protected Date shipDate = SHIP_DATE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getPartNum() <em>Part Num</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPartNum()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PART_NUM_EDEFAULT = null;
-
-	/**
 	 * The cached value of the '{@link #getPartNum() <em>Part Num</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -150,7 +141,7 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 	 * @generated
 	 * @ordered
 	 */
-	protected String partNum = PART_NUM_EDEFAULT;
+	protected Object partNum;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,7 +277,7 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPartNum() {
+	public Object getPartNum() {
 		return partNum;
 	}
 
@@ -295,8 +286,8 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPartNum(String newPartNum) {
-		String oldPartNum = partNum;
+	public void setPartNum(Object newPartNum) {
+		Object oldPartNum = partNum;
 		partNum = newPartNum;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Esof_homework4_q2Package.ITEM__PART_NUM, oldPartNum,
@@ -351,7 +342,7 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 			setShipDate((Date) newValue);
 			return;
 		case Esof_homework4_q2Package.ITEM__PART_NUM:
-			setPartNum((String) newValue);
+			setPartNum(newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -381,7 +372,7 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 			setShipDate(SHIP_DATE_EDEFAULT);
 			return;
 		case Esof_homework4_q2Package.ITEM__PART_NUM:
-			setPartNum(PART_NUM_EDEFAULT);
+			setPartNum((Object) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -406,7 +397,7 @@ public class ItemImpl extends MinimalEObjectImpl.Container implements Item {
 		case Esof_homework4_q2Package.ITEM__SHIP_DATE:
 			return SHIP_DATE_EDEFAULT == null ? shipDate != null : !SHIP_DATE_EDEFAULT.equals(shipDate);
 		case Esof_homework4_q2Package.ITEM__PART_NUM:
-			return PART_NUM_EDEFAULT == null ? partNum != null : !PART_NUM_EDEFAULT.equals(partNum);
+			return partNum != null;
 		}
 		return super.eIsSet(featureID);
 	}

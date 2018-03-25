@@ -19,14 +19,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esof_homework4_q2.ecore#//PurchaseOrder/shipTo"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference esof_homework4_q2.ecore#//PurchaseOrder/billTo"/>
     </genClasses>
-    <genClasses ecoreClass="esof_homework4_q2.ecore#//USAddress">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/street"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/city"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/state"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/zip"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/country"/>
-    </genClasses>
     <genClasses ecoreClass="esof_homework4_q2.ecore#//Item">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/productName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/quantity"/>
@@ -34,6 +26,14 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/comment"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/shipDate"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//Item/partNum"/>
+    </genClasses>
+    <genClasses ecoreClass="esof_homework4_q2.ecore#//USAddress">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/zip"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute esof_homework4_q2.ecore#//USAddress/country"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

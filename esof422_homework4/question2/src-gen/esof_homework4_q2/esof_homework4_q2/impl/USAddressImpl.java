@@ -3,6 +3,7 @@
 package esof_homework4_q2.esof_homework4_q2.impl;
 
 import esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Package;
+import esof_homework4_q2.esof_homework4_q2.USAddress;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -22,8 +23,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getName <em>Name</em>}</li>
  *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getStreet <em>Street</em>}</li>
  *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getCity <em>City</em>}</li>
- *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getState <em>State</em>}</li>
  *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getZip <em>Zip</em>}</li>
+ *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getState <em>State</em>}</li>
  *   <li>{@link esof_homework4_q2.esof_homework4_q2.impl.USAddressImpl#getCountry <em>Country</em>}</li>
  * </ul>
  *
@@ -91,26 +92,6 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 	protected String city = CITY_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getState() <em>State</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getState()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String STATE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getState() <em>State</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getState()
-	 * @generated
-	 * @ordered
-	 */
-	protected String state = STATE_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getZip() <em>Zip</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -131,6 +112,26 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 	protected int zip = ZIP_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getState() <em>State</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getState()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STATE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getState() <em>State</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getState()
+	 * @generated
+	 * @ordered
+	 */
+	protected String state = STATE_EDEFAULT;
+
+	/**
 	 * The default value of the '{@link #getCountry() <em>Country</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -138,7 +139,7 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String COUNTRY_EDEFAULT = "\"US\"";
+	protected static final String COUNTRY_EDEFAULT = "\u201cUS\u201d";
 
 	/**
 	 * The cached value of the '{@link #getCountry() <em>Country</em>}' attribute.
@@ -240,28 +241,6 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getState() {
-		return state;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setState(String newState) {
-		String oldState = state;
-		state = newState;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Esof_homework4_q2Package.US_ADDRESS__STATE, oldState,
-					state));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public int getZip() {
 		return zip;
 	}
@@ -277,6 +256,28 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Esof_homework4_q2Package.US_ADDRESS__ZIP, oldZip,
 					zip));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getState() {
+		return state;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setState(String newState) {
+		String oldState = state;
+		state = newState;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Esof_homework4_q2Package.US_ADDRESS__STATE, oldState,
+					state));
 	}
 
 	/**
@@ -315,10 +316,10 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 			return getStreet();
 		case Esof_homework4_q2Package.US_ADDRESS__CITY:
 			return getCity();
-		case Esof_homework4_q2Package.US_ADDRESS__STATE:
-			return getState();
 		case Esof_homework4_q2Package.US_ADDRESS__ZIP:
 			return getZip();
+		case Esof_homework4_q2Package.US_ADDRESS__STATE:
+			return getState();
 		case Esof_homework4_q2Package.US_ADDRESS__COUNTRY:
 			return getCountry();
 		}
@@ -342,11 +343,11 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 		case Esof_homework4_q2Package.US_ADDRESS__CITY:
 			setCity((String) newValue);
 			return;
-		case Esof_homework4_q2Package.US_ADDRESS__STATE:
-			setState((String) newValue);
-			return;
 		case Esof_homework4_q2Package.US_ADDRESS__ZIP:
 			setZip((Integer) newValue);
+			return;
+		case Esof_homework4_q2Package.US_ADDRESS__STATE:
+			setState((String) newValue);
 			return;
 		case Esof_homework4_q2Package.US_ADDRESS__COUNTRY:
 			setCountry((String) newValue);
@@ -372,11 +373,11 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 		case Esof_homework4_q2Package.US_ADDRESS__CITY:
 			setCity(CITY_EDEFAULT);
 			return;
-		case Esof_homework4_q2Package.US_ADDRESS__STATE:
-			setState(STATE_EDEFAULT);
-			return;
 		case Esof_homework4_q2Package.US_ADDRESS__ZIP:
 			setZip(ZIP_EDEFAULT);
+			return;
+		case Esof_homework4_q2Package.US_ADDRESS__STATE:
+			setState(STATE_EDEFAULT);
 			return;
 		case Esof_homework4_q2Package.US_ADDRESS__COUNTRY:
 			setCountry(COUNTRY_EDEFAULT);
@@ -399,10 +400,10 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 			return STREET_EDEFAULT == null ? street != null : !STREET_EDEFAULT.equals(street);
 		case Esof_homework4_q2Package.US_ADDRESS__CITY:
 			return CITY_EDEFAULT == null ? city != null : !CITY_EDEFAULT.equals(city);
-		case Esof_homework4_q2Package.US_ADDRESS__STATE:
-			return STATE_EDEFAULT == null ? state != null : !STATE_EDEFAULT.equals(state);
 		case Esof_homework4_q2Package.US_ADDRESS__ZIP:
 			return zip != ZIP_EDEFAULT;
+		case Esof_homework4_q2Package.US_ADDRESS__STATE:
+			return STATE_EDEFAULT == null ? state != null : !STATE_EDEFAULT.equals(state);
 		case Esof_homework4_q2Package.US_ADDRESS__COUNTRY:
 			return COUNTRY_EDEFAULT == null ? country != null : !COUNTRY_EDEFAULT.equals(country);
 		}
@@ -426,10 +427,10 @@ public class USAddressImpl extends MinimalEObjectImpl.Container implements USAdd
 		result.append(street);
 		result.append(", city: ");
 		result.append(city);
-		result.append(", state: ");
-		result.append(state);
 		result.append(", zip: ");
 		result.append(zip);
+		result.append(", state: ");
+		result.append(state);
 		result.append(", country: ");
 		result.append(country);
 		result.append(')');

@@ -73,16 +73,16 @@ public class Esof_homework4_q2Switch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Esof_homework4_q2Package.US_ADDRESS: {
-			USAddress usAddress = (USAddress) theEObject;
-			T result = caseUSAddress(usAddress);
+		case Esof_homework4_q2Package.ITEM: {
+			Item item = (Item) theEObject;
+			T result = caseItem(item);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Esof_homework4_q2Package.ITEM: {
-			Item item = (Item) theEObject;
-			T result = caseItem(item);
+		case Esof_homework4_q2Package.US_ADDRESS: {
+			USAddress usAddress = (USAddress) theEObject;
+			T result = caseUSAddress(usAddress);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -108,21 +108,6 @@ public class Esof_homework4_q2Switch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>US Address</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>US Address</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseUSAddress(USAddress object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Item</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -134,6 +119,21 @@ public class Esof_homework4_q2Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseItem(Item object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>US Address</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>US Address</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUSAddress(USAddress object) {
 		return null;
 	}
 

@@ -4,6 +4,9 @@ package esof_homework4_q2.esof_homework4_q2.impl;
 
 import esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Factory;
 import esof_homework4_q2.esof_homework4_q2.Esof_homework4_q2Package;
+import esof_homework4_q2.esof_homework4_q2.Item;
+import esof_homework4_q2.esof_homework4_q2.PurchaseOrder;
+import esof_homework4_q2.esof_homework4_q2.USAddress;
 
 import java.util.Date;
 
@@ -34,14 +37,14 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass usAddressEClass = null;
+	private EClass itemEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass itemEClass = null;
+	private EClass usAddressEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,69 +182,6 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUSAddress() {
-		return usAddressEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_Name() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_Street() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_City() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_State() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_Zip() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getUSAddress_Country() {
-		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getItem() {
 		return itemEClass;
 	}
@@ -305,6 +245,69 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getUSAddress() {
+		return usAddressEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_Name() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_Street() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_City() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_Zip() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_State() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUSAddress_Country() {
+		return (EAttribute) usAddressEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EDataType getDate() {
 		return dateEDataType;
 	}
@@ -354,14 +357,6 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 		createEReference(purchaseOrderEClass, PURCHASE_ORDER__SHIP_TO);
 		createEReference(purchaseOrderEClass, PURCHASE_ORDER__BILL_TO);
 
-		usAddressEClass = createEClass(US_ADDRESS);
-		createEAttribute(usAddressEClass, US_ADDRESS__NAME);
-		createEAttribute(usAddressEClass, US_ADDRESS__STREET);
-		createEAttribute(usAddressEClass, US_ADDRESS__CITY);
-		createEAttribute(usAddressEClass, US_ADDRESS__STATE);
-		createEAttribute(usAddressEClass, US_ADDRESS__ZIP);
-		createEAttribute(usAddressEClass, US_ADDRESS__COUNTRY);
-
 		itemEClass = createEClass(ITEM);
 		createEAttribute(itemEClass, ITEM__PRODUCT_NAME);
 		createEAttribute(itemEClass, ITEM__QUANTITY);
@@ -369,6 +364,14 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 		createEAttribute(itemEClass, ITEM__COMMENT);
 		createEAttribute(itemEClass, ITEM__SHIP_DATE);
 		createEAttribute(itemEClass, ITEM__PART_NUM);
+
+		usAddressEClass = createEClass(US_ADDRESS);
+		createEAttribute(usAddressEClass, US_ADDRESS__NAME);
+		createEAttribute(usAddressEClass, US_ADDRESS__STREET);
+		createEAttribute(usAddressEClass, US_ADDRESS__CITY);
+		createEAttribute(usAddressEClass, US_ADDRESS__ZIP);
+		createEAttribute(usAddressEClass, US_ADDRESS__STATE);
+		createEAttribute(usAddressEClass, US_ADDRESS__COUNTRY);
 
 		// Create data types
 		dateEDataType = createEDataType(DATE);
@@ -407,7 +410,7 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(purchaseOrderEClass, PurchaseOrder.class, "PurchaseOrder", !IS_ABSTRACT, !IS_INTERFACE,
-				!IS_GENERATED_INSTANCE_CLASS);
+				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPurchaseOrder_Comment(), ecorePackage.getEString(), "comment", null, 0, 1,
 				PurchaseOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
@@ -423,22 +426,7 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(usAddressEClass, Object.class, "USAddress", !IS_ABSTRACT, !IS_INTERFACE,
-				!IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUSAddress_Name(), ecorePackage.getEString(), "name", null, 0, 1, USAddress.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUSAddress_Street(), ecorePackage.getEString(), "street", null, 0, 1, USAddress.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUSAddress_City(), ecorePackage.getEString(), "city", null, 0, 1, USAddress.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUSAddress_State(), ecorePackage.getEString(), "state", null, 0, 1, USAddress.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUSAddress_Zip(), ecorePackage.getEInt(), "zip", null, 0, 1, USAddress.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUSAddress_Country(), ecorePackage.getEString(), "country", "\"US\"", 0, 1, USAddress.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(itemEClass, Object.class, "Item", !IS_ABSTRACT, !IS_INTERFACE, !IS_GENERATED_INSTANCE_CLASS);
+		initEClass(itemEClass, Item.class, "Item", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getItem_ProductName(), ecorePackage.getEString(), "productName", null, 0, 1, Item.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItem_Quantity(), ecorePackage.getEInt(), "quantity", null, 0, 1, Item.class, !IS_TRANSIENT,
@@ -452,9 +440,25 @@ public class Esof_homework4_q2PackageImpl extends EPackageImpl implements Esof_h
 		initEAttribute(getItem_PartNum(), this.getSKU(), "partNum", null, 0, 1, Item.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(usAddressEClass, USAddress.class, "USAddress", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUSAddress_Name(), ecorePackage.getEString(), "name", null, 0, 1, USAddress.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUSAddress_Street(), ecorePackage.getEString(), "street", null, 0, 1, USAddress.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUSAddress_City(), ecorePackage.getEString(), "city", null, 0, 1, USAddress.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUSAddress_Zip(), ecorePackage.getEInt(), "zip", null, 0, 1, USAddress.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUSAddress_State(), ecorePackage.getEString(), "state", null, 0, 1, USAddress.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUSAddress_Country(), ecorePackage.getEString(), "country", "\u201cUS\u201d", 0, 1,
+				USAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
 		// Initialize data types
 		initEDataType(dateEDataType, Date.class, "Date", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(skuEDataType, String.class, "SKU", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(skuEDataType, Object.class, "SKU", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -72,13 +72,13 @@ public class Esof_homework4_q2AdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseUSAddress(USAddress object) {
-			return createUSAddressAdapter();
+		public Adapter caseItem(Item object) {
+			return createItemAdapter();
 		}
 
 		@Override
-		public Adapter caseItem(Item object) {
-			return createItemAdapter();
+		public Adapter caseUSAddress(USAddress object) {
+			return createUSAddressAdapter();
 		}
 
 		@Override
@@ -101,13 +101,13 @@ public class Esof_homework4_q2AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link PurchaseOrder <em>Purchase Order</em>}'.
+	 * Creates a new adapter for an object of class '{@link esof_homework4_q2.esof_homework4_q2.PurchaseOrder <em>Purchase Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see PurchaseOrder
+	 * @see esof_homework4_q2.esof_homework4_q2.PurchaseOrder
 	 * @generated
 	 */
 	public Adapter createPurchaseOrderAdapter() {
@@ -115,30 +115,30 @@ public class Esof_homework4_q2AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link USAddress <em>US Address</em>}'.
+	 * Creates a new adapter for an object of class '{@link esof_homework4_q2.esof_homework4_q2.Item <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see USAddress
+	 * @see esof_homework4_q2.esof_homework4_q2.Item
 	 * @generated
 	 */
-	public Adapter createUSAddressAdapter() {
+	public Adapter createItemAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Item <em>Item</em>}'.
+	 * Creates a new adapter for an object of class '{@link esof_homework4_q2.esof_homework4_q2.USAddress <em>US Address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Item
+	 * @see esof_homework4_q2.esof_homework4_q2.USAddress
 	 * @generated
 	 */
-	public Adapter createItemAdapter() {
+	public Adapter createUSAddressAdapter() {
 		return null;
 	}
 
