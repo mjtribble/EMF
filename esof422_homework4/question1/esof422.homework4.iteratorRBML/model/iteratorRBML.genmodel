@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/esof422.homework4.iteratorRBML/src-gen" creationIcons="false"
+    editDirectory="/esof422.homework4.iteratorRBML.edit/src-gen" editorDirectory="/esof422.homework4.iteratorRBML.editor/src-gen"
+    modelPluginID="esof422.homework4.iteratorRBML" modelName="IteratorRBML" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>iteratorRBML.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="IteratorRBML" basePackage="esof422.homework4" disposableProviderFactory="true"
+      ecorePackage="iteratorRBML.ecore#/">
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassifierRoleIterator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassifierRoleIterator/RealizationRole"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassifierRoleIterator/GeneralizationRole"/>
+      <genOperations ecoreOperation="iteratorRBML.ecore#//ClassifierRoleIterator/hasNext"/>
+      <genOperations ecoreOperation="iteratorRBML.ecore#//ClassifierRoleIterator/next"/>
+      <genOperations ecoreOperation="iteratorRBML.ecore#//ClassifierRoleIterator/remove"/>
+    </genClasses>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassifierRoleAggregate">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassifierRoleAggregate/RealizationRole"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassifierRoleAggregate/GeneralizationRole"/>
+      <genOperations ecoreOperation="iteratorRBML.ecore#//ClassifierRoleAggregate/createIterator"/>
+    </genClasses>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassifierRoleAbstractIterator"/>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassifierRoleAbstractAggregate"/>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassRoleConcreateAggregate">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassRoleConcreateAggregate/UsageRole"/>
+    </genClasses>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassRoleConcreteIterator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassRoleConcreteIterator/classroleconcreateaggregate"/>
+    </genClasses>
+    <genClasses ecoreClass="iteratorRBML.ecore#//ClassRoleClient">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassRoleClient/AssosiationRole"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference iteratorRBML.ecore#//ClassRoleClient/AssociationRole"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

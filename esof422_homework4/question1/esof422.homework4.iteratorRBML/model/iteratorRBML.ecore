@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="iteratorRBML" nsURI="http://www.example.org/iteratorRBML" nsPrefix="iteratorRBML">
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierRoleIterator">
+    <eOperations name="hasNext"/>
+    <eOperations name="next"/>
+    <eOperations name="remove"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="RealizationRole" eType="#//ClassifierRoleIterator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="GeneralizationRole" eType="#//ClassifierRoleIterator"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierRoleAggregate">
+    <eOperations name="createIterator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="RealizationRole" eType="#//ClassifierRoleAggregate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="GeneralizationRole" eType="#//ClassifierRoleAggregate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierRoleAbstractIterator" eSuperTypes="#//ClassifierRoleIterator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierRoleAbstractAggregate" eSuperTypes="#//ClassifierRoleAggregate"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassRoleConcreateAggregate" eSuperTypes="#//ClassifierRoleAggregate">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="UsageRole" eType="#//ClassRoleConcreteIterator"
+        eOpposite="#//ClassRoleConcreteIterator/classroleconcreateaggregate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassRoleConcreteIterator" eSuperTypes="#//ClassifierRoleIterator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classroleconcreateaggregate"
+        eType="#//ClassRoleConcreateAggregate" eOpposite="#//ClassRoleConcreateAggregate/UsageRole"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassRoleClient">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="AssosiationRole" eType="#//ClassifierRoleIterator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="AssociationRole" eType="#//ClassifierRoleAggregate"/>
+  </eClassifiers>
+</ecore:EPackage>
